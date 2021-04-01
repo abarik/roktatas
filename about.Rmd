@@ -1,0 +1,27 @@
+---
+title: "Előadók"
+---
+
+Csapatunk azt a célt tűzte maga elé, hogy minél több ember számára elérhető teszi a statisztika eszközrendszerét. Tanfolyamokat és konzultációkat ajánlunk fel az érdeklődők számára. Tanfolyamaink csoportlétszámát 3 főben maximáltuk.
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+source(file = "common.R")
+```
+
+
+```{=html}
+<div class="card">
+    <div class="row no-gutters">
+        <div class="col-sm-4" style="background: #868e96;">
+            <img src="image/abari.jpg" class="card-img-top h-100">
+        </div>
+        <div class="col-sm-8">
+            <div class="card-body">
+                <h5 class="card-title">Abari Kálmán</h5>
+                <p class="card-text">Abari Kálmán vagyok, a Debreceni Egyetem Pszichológiai Intézetének adjunktusa. Kutatási területem a matematikai statisztika pszichológiai alkalmazásai, a tudásterek elmélete, a statisztikai gépi tanulás és mesterséges intelligencia. Több mint 10 éve veszek részt az R statisztikai programcsomag hazai oktatásában. Különös figyelmet fordítok arra, hogy az R lehetőségei ne csak az informatikai szakemberek számára legyenek hozzáférhetőek, hanem a bioinformatika és a pszichológia területéről érkezők is gördülékenyen tudják használni azt a saját munkájukban. Elérhetőség: <a href="mailto:abari.kalman@gmail.com" class="email">abari.kalman@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+```

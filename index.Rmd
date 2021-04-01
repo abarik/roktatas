@@ -1,0 +1,61 @@
+---
+title: "Aktuálisan elérhető tanfolyamaink"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+
+```{r}
+tbl <- 
+tribble(
+  ~tanfolyam,  ~kod,                 ~nap.1,                           ~nap.2, ~ora,    ~dij,   ~hatarido, ~link,
+  "Alap R", "AR0417", "2021.04.17. 9-13",  "2021.04.18. 9-13 és 14-18", "12", "35000", "2021.04.14-ig", "alapr.html",
+  "Alap R", "AR0424", "2021.04.24. 9-13 és 14-18", "2021.04.25. 9-13",          "12", "35000", "2021.04.20-ig", "alapr.html",
+  "Alap R", "AR0508", "2021.05.08. 9-13 és 14-18", "2021.05.09. 9-13",          "12", "35000", "2021.05.04-ig", "alapr.html"
+
+)
+# #tbl <- column_to_rownames(tbl, "col1")
+# col_names <- c("Tanfolyam", "Kurzuskód", "Dátum", "Óraszám", "Díj (Ft)", "Az órák időpontja", "Jelentkezési határidő")
+# names(tbl) <- col_names
+# 
+#  
+# tbl$Tanfolyam = cell_spec( tbl$Tanfolyam, color = "black", background ="orange")
+# 
+# kable(tbl, align = c("l", "c", "c", "c", "c", "c", "c"),  escape = F) %>%
+#   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) 
+
+```
+
+```{=html}
+<div class="card-deck">
+```
+
+```{r results='asis'}
+htmltools::HTML(kurzusok(tbl))
+```
+
+```{=html}
+</div>
+<br />
+```
+
+## Jelentkezés tanfolyamra
+
+**A kiválasztott tanfolyamra a jelentkezés email-ben történik: [roktatas\@gmail.com](mailto:roktatas@gmail.com){.email}**.\
+Az elküldött email-ben a kiválasztott tanfolyam nevét és kurzuskódját kell megadni. A jelentkezést visszaigazoljuk és egyben elküldjük azt a számlaszámot, amelyre 48 órán belül a tanfolyami díjnak meg kell érkeznie. Amennyiben ez nem történik meg, úgy tekintjük, hogy Ön elállt a tanfolyami részvételtől. A sikeres befizetésről elektronikus számlát állítunk ki. A szolgáltató a Kalita 2000 Bt.
+
+## Technikai tudnivalók a tanfolyamokról
+
+Az online tanfolyam Jitsi videókonferencia szoftverrel valósul meg, amelynek linkjét legkésőbb 24 órával a tanfolyam kezdése előtt elküldjük. A technika kipróbálására is biztosítunk egy időpontot a tanfolyam kezdése előtt. A kurzuson való részvételhez az alábbi technikai feltételek megléte szükséges:
+
+-   szélessávú internet kapcsolat
+-   video chat-hez használható számítógép/notebook
+-   mikrofon (headset ajánlott)
+-   Chrome böngésző
+

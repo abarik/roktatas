@@ -1,0 +1,59 @@
+blockquote {
+  font-style: italic;
+}
+
+body {
+  font-size: 210%;
+}
+
+
+/* define variables, call with var(--main-bg-color) */
+/* Personal Website CSS 
+Vincent Bauer
+7/15/2016
+*/
+
+:root {
+  /* --primary-bg: rgba(38, 20, 199, 1); */
+  /* --primary-bg-dark: rgba(30, 15, 167, 1); */
+  --primary-bg: rgba(0,0,0,1);
+  --primary-bg-dark: rgba(40,40,40,1);
+  --secondary-bg:rgba(249, 149, 26, 1);
+  --secondary-bg-dark:rgba(247, 117, 29, 1);
+}
+
+
+.navbar-default a.navbar-brand {
+  color: var(--secondary-bg-dark);
+  font-size: 120%;
+}
+
+
+/* link style */
+a {
+  color: var(--secondary-bg-dark);
+}
+
+a:visited {
+  color: var(--secondary-bg-dark);
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: var(--secondary-bg-dark);
+  cursor: pointer;
+}
+
+
+a.text {
+  color: var(--primary-bg);
+}
+
+
+
+a.text:hover {
+  text-decoration: none;
+  color: var(--secondary-bg);
+}
+

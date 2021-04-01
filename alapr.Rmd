@@ -1,0 +1,55 @@
+---
+title: "Alap R"
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+
+source(file = "common.R")
+```
+
+```{=html}
+<img src="image/rkep.jpg" class="w-25 h-25 rounded-sm float-left m-3 shadow-sm p-3 mb-5 bg-white rounded" />
+```
+
+
+Az Alap R tanfolyam kezdő R felhasználók számára nyújt biztos alapokat. A tanfolyam elvégzése után a résztvevők képesek lesznek az adatelemzés egyszerűbb lépéseinek végrehajtására, melyek az adatok beolvasása, az adatok előkészítése az elemzésre, a leíró statisztikai elemzések és a publikálásra való előkészítés. A résztvevők szisztematikus bevezetést kapnak az R fogalmaiba, és megismerkednek a reprodukálható kutatás részleteivel.
+
+**Előadó**: Abari Kálmán\
+**Óraszám**: 12 óra (12 $\times$ 50 perc)\
+**Maximális csoportlétszám**: 3 fő (a tanfolyam 2 vagy 3 fővel indul)\
+**Előfeltétel**: nincs\
+**A tanfolyam technikai feltételei**: A résztvevők az előadóval együtt a saját számítógépükön dolgoznak. A tanfolyam kezdete előtt telepíteni kell az ingyenes és több-platforomos [Alap R](https://www.r-project.org/) és [RStudio](https://www.rstudio.com/) programcsomagokat. Segítségül ezt a videót ajánljuk: [Az R és RStudio telepítése](https://www.youtube.com/watch?v=UBeiIKzE8VA&list=PLnmeQHnHYqv6ENGrdTXiE9YJrvHuxH2C9&index=1)
+
+## Az Alap R óravázlata
+
+```{r}
+text_tbl <- data.frame(
+  `Óra` = paste0(c(1:12), "."),
+  `Leírás` = c(
+    "A konzolos és szkriptállományos használat. Az RStudio beállításai.",
+    "Alapvető adattípusok és konstansok írása.", 
+    "Operátorok használata: matematikai, relációs, logikai és egyéb operátorok.",
+    "Objektumok és az értékadó utasítás.",
+    "Az RMarkdown használata és a csomagok.",
+    "Adatszerkezetek: vektor, faktor és adattábla.",
+    "Függvények, kifejezések és a vektoraritmetika szabályai.",
+    "Szabályos vektorok generálása és az indexelés.",
+    "Az adatelemzés lépései. Adatok olvasása és írása.",
+    "Előkészítő lépések, szűrés és rendezés.",
+    "A leíró statisztika elemei: mutatók, táblázatok.",
+    "A hagyományos grafika elemei: hisztogram, doboz-, pont- és oszlopdiagram."
+  )
+)
+
+text_tbl$`Óra` <- cell_spec(text_tbl$`Óra`, 
+                      background = "#ffcc6f", color = "black", align = "center")
+
+kbl(text_tbl, escape = F) %>%
+  kable_styling(full_width = F) %>%
+  column_spec(1, bold = F, border_right = T) %>%
+  column_spec(2, width = "35em", background = "#fefefe")
+```

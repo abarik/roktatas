@@ -1,0 +1,39 @@
+name: "r-oktatas"
+output_dir: docs
+navbar:
+  title: "R oktatás"
+  left:
+    - text: "Aktuális"
+      icon: fa-home
+      href: index.html
+    - text: "Szolgáltatásaink"
+      icon: fa-comment
+      menu:
+        - text: "Tanfolyamok"
+        - text: "Alap R"
+          href: alapr.html
+        - text: "---------"
+        - text: "Konzultációk"
+    - text: "Előadók"
+      icon: fa-user    
+      href: about.html
+output:
+  html_document:
+    theme: 
+      version: 4
+      bootswatch: united
+    highlight: textmate
+      # 
+      # bg: "#121212"
+      # fg: "#E4E4E4"
+      # primary: "#EA80FC"
+      # secondary: "#00DAC6"
+      # base_font: !expr bslib::font_google("Open Sans")
+      # heading_font: !expr bslib::font_google("Proza Libre")
+      # code_font: !expr bslib::font_google("Fira Code")
+      # code-color: "#00DAC6"
+      # 
+  
+    # include:
+    #   after_body: footer.html
+    css: styles.css
